@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="sidebar">
+    <p></p>
+  </div>
+  <div class="space"></div>
+  <div class="video">
+    <video id="local_video" #local_video [autoplay]="true" [muted]="true"></video>
+
+    <video id="remote_video" #received_video [autoplay]="true"  [muted]="true"></video>
+  </div>
+</div>
+<div class="buttons">
+  <button mat-raised-button color="primary" (click)="startLocalVideo()" [disabled]="localVideoActive">Start Local</button>
+  <button mat-raised-button color="primary" (click)="pauseLocalVideo()" [disabled]="!localVideoActive">Stop Local</button>
+  <button mat-raised-button color="primary" (click)="call()" [disabled]="inCall || !localVideoActive">Call</button>
+  <button mat-raised-button color="primary" (click)="hangUp()" [disabled]="!inCall">HangUp</button>
+</div>
+

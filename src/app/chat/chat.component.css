@@ -1,0 +1,36 @@
+video {
+  width: 50%;
+  background: grey;
+}
+
+button {
+  margin: 1em;
+}
+ .container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+.video{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+}
+.sidebar{
+  width: 500px;
+  height: 400px;
+}
+#remote_video{
+  margin-left: 500px;
+  margin-top: 50px;
+}
+#local_video{
+  margin-left: 500px;
+}
+.space{
+  width: 1000px;
+}
+.buttons{
+  margin-left: 1300px;
+}
