@@ -1,5 +1,5 @@
 video {
-  width: 50%;
+  width: 70%;
   background: grey;
 }
 
@@ -22,15 +22,15 @@ button {
   height: 400px;
 }
 #remote_video{
-  margin-left: 500px;
+  margin-left: 45%;
   margin-top: 50px;
 }
 #local_video{
-  margin-left: 500px;
+  margin-left: 45%;
 }
 .space{
   width: 1000px;
 }
 .buttons{
-  margin-left: 1300px;
+  margin-left: 70%;
 }

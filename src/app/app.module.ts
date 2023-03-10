@@ -8,6 +8,9 @@ import {AppRoutingModule} from "./app-routing.module";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatGridListModule} from "@angular/material/grid-list";
 import { ChatComponent } from './chat/chat.component';
+import { NgxDocViewerModule } from 'ngx-doc-viewer';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { ChatComponent } from './chat/chat.component';
     MatSidenavModule,
     MatButtonModule,
     MatGridListModule,
-
+    NgxDocViewerModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

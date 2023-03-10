@@ -2,7 +2,6 @@ import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 import {DataService} from "../../service/data.service";
 import {Message} from "../../types/message";
 
-
 const mediaConstraints = {
   audio: true,
   video: {width: 1280, height: 720}
@@ -26,13 +25,14 @@ export class ChatComponent implements AfterViewInit {
 
   @ViewChild('local_video') localVideo!: ElementRef;
   @ViewChild('received_video') remoteVideo!: ElementRef;
-
+  pdfSrc = "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf";
   private peerConnection!: RTCPeerConnection;
 
   private localStream!: MediaStream;
 
   inCall = false;
   localVideoActive = false;
+
 
 
   constructor(private dataService: DataService) { }
@@ -154,6 +154,7 @@ export class ChatComponent implements AfterViewInit {
     const candidate = new RTCIceCandidate(msg);
     this.peerConnection.addIceCandidate(candidate).catch(this.reportError);
   }
+/*######################################## request media devices ##################################*/
 
   private async requestMediaDevices(): Promise<void> {
     try {

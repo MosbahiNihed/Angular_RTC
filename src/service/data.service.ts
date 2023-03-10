@@ -44,8 +44,8 @@ export class DataService {
    */
   private getNewWebSocket(): WebSocketSubject<any> {
     return webSocket({
-      /*url: 'ws://localhost:8080/socket',*/
-      url: 'ws://192.168.1.176:8080/socket',
+      // url: 'ws://localhost:8080/socket',
+      url: 'ws://192.168.1.51:8080/socket',
       openObserver: {
         next: () => {
           console.log('[DataService]: connection ok');
